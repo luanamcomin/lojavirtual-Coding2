@@ -1,3 +1,4 @@
+
 /* Adicione ou ajuste o estilo conforme necessário */
 
 body {
@@ -7,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #504d4d;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -69,6 +70,7 @@ main {
   font-size: 16px;
   margin-top: 10px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .cart-overlay {
@@ -88,6 +90,7 @@ main {
   padding: 20px;
   border-radius: 5px;
   position: relative;
+  border-radius: 10px;
 }
 
 #close-cart {
@@ -97,10 +100,12 @@ main {
 }
 
 #checkout-button {
+  background-color: #4CAF50;
   display: block;
-  width: 100%;
+  width: 60%;
   padding: 10px;
-  margin-top: 20px;
+  border-radius: 10px;
+  margin:0 auto;
 }
 
 .decrease-button {
@@ -115,4 +120,20 @@ main {
   margin-top: 5px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
 }
