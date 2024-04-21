@@ -1,14 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beauty Cosméticos</title>
-    <link href="/css/styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do Produto</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Inclua o link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Inclua o link para o seu arquivo CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body >
+<body>  
     <header class="p-3 mb-3 border-bottom">
         <nav class="navbar navbar-expand-sm navbar-light bg-ligth">
             <a href="#" class="navbar-brand mb-0 h1">
@@ -38,100 +43,90 @@
                 </form>
                 </ul>
             </div>
-
         </nav>
     </header>
 
-    <div class="b-example-divider"></div>
-    <div id="products-carousel" class="carousel slide p-4 mb-4 border-bottom" data-bs-ride="carousel" data-bs-interval="4000">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-            <img src="./img/florata-teste.jpg" class="d-block w-100 c-img" alt="slide 1">
-          </div>
-          <div class="carousel-item c-item">
-            <img src="/img/malbec-teste.jpg" class="d-block w-100 c-img" alt="slide 2">
-          </div>
-          <div class="carousel-item c-item">
-            <img src="/img/malbec-teste2.jpg" class="d-block w-100 c-img" alt="slide 3">
-          </div>
-        </div>
-        <section class = "carousel-control">
-            <button class="carousel-control-prev" type="button" data-bs-target="#products-carousel" data-bs-slide="prev">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-20" src="/img/maebffb.png" alt="Primeiro slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-50" src="img/Kit siage.jpeg" alt="Segundo slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-50" src="img/mamaebebe.jpg" alt="Terceiro slide">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#products-carousel" data-bs-slide="next">
+                <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-      </div>
-
-        <!-- Produtos-->
-      <main>
-        <section class="products-card">
-
-            <div class="card" style="width: 18rem;">
-                <a href="/product-1.html"><img src="/img/floratta.png" alt="Floratta" class="card-img-top"></a>
-                <div class="card-body">
-                    <h2>Floratta</h2>
-                    <h4>R$ 50,00</h4>
-                    <button class="add-to-cart" data-name="Floratta" data-price="50">Adicionar ao Carrinho</button>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                <h3>Loção Firmadora Desodorante Corporal Nativa SPA Quinoa 400ml</h3  >
+                <p>A Loção Firmadora Desodorante Corporal Nativa SPA Quinoa te convida a sentir a vida, de pele e alma. A textura e a fragrância que conquistaram Buba, da novela Renascer 2024*, também vai te conquistar, pois entrega uma pele cheia de vida para uma rotina incrível de cuidados.</p>
                 </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="/img/malbec.png" alt="Malbec" class="card-img-top" >
-                <div class="card-body">
-                    <h2>Malbec</h2>
-                    <h4>R$ 70,00</h4>
-                    <button class="add-to-cart" data-name="Floratta" data-price="50">Adicionar ao Carrinho</button>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div>
+                <h3>Preço: R$ 70,00</h3>
+                <div>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" value="1" min="1">
                 </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="/img/maebb.png" alt="Mamãe e Bebê" class="card-img-top" >
-                <div class="card-body">
-                    <h2>Mamãe e Bebê</h2>
-                    <h4>R$ 40,00</h4>
-                    <button class="add-to-cart" data-name="Floratta" data-price="50">Adicionar ao Carrinho</button>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div>
+                <label for="cor">Variação:</label>
+                <select id="cor">
+                    <option value="azul">Azul</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="verde">Verde</option>
+                </select>
                 </div>
-              </div>
+                <button id="adicionarCarrinho" class="btn btn-primary">Adicionar ao Carrinho</button>
+            </div>
+            </div>
+        </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="/img/maebb.png" alt="Mamãe e Bebê" class="card-img-top" >
-                <div class="card-body">
-                    <h2>Mamãe e Bebê</h2>
-                    <h4>R$ 40,00</h4>
-                    <button class="add-to-cart" data-name="Floratta" data-price="50">Adicionar ao Carrinho</button>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+        <div class="p-3 mb-3 border-bottom">
+            <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#video">Vídeo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#foto">Fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#comentarios">Comentários</a>
+            </li>
+            </ul>
+            <div id="video" class="content">
+            Vídeos do Produto aqui...
+            </div>
+            <div id="foto" class="content">
+            Fotos do Produto aqui...
+            </div>
+            <div id="comentarios" class="content">
+            Comentários do Produto aqui...
+            </div>
+        </div>
+    </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="/img/maebb.png" alt="Mamãe e Bebê" class="card-img-top" >
-                <div class="card-body">
-                    <h2>Mamãe e Bebê</h2>
-                    <h4>R$ 40,00</h4>
-                    <button class="add-to-cart" data-name="Floratta" data-price="50">Adicionar ao Carrinho</button>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>  
-        </section>
-      </main>
-    <script src="/js/script.js"></script>
+    <script src="/js/teste.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+</body>
 
-  <footer class="bg-light">
+<footer class="bg-light">
     <div class="container p-2">
         <div class="row">
             <!-- Sobre a empresa -->
@@ -189,7 +184,5 @@
     <div class="text-center p-3 bg-dark text-white">
         &copy; 2024 Beauty Cosméticos. Todos os direitos reservados.
     </div>
-    
 </footer>
-
 </html>
