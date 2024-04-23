@@ -7,4 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // Aqui você pode adicionar a lógica para atualizar o número de itens no carrinho
     });
   });
+
+  
   
