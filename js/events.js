@@ -25,4 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // Adicione a lógica para atualizar o preço total com base na cor selecionada
     });
   });
+
+  
   
