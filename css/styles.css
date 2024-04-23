@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> da2417816245ef7e8f3cf8879336ce96369f039e
 /* Customisando o carrocel*/
 .c-item {
   height: 480px;
@@ -17,8 +20,12 @@
 .list-unstyled d-flex{
   margin: 5px;
 }
+/*-----------------------*/
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> da2417816245ef7e8f3cf8879336ce96369f039e
 .products-card {
   display: flex;
   flex-wrap: wrap;
@@ -60,4 +67,33 @@
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 }
+
+.col-md-6 {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.id {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.footer {
+  background-color: lightblue;
+
+}
+
+.star {
+font-size: 20px;
+cursor: pointer;
+}
+
+.star:hover,
+.rated {
+color: gold;
+}
+=======
+}
+>>>>>>> da2417816245ef7e8f3cf8879336ce96369f039e
